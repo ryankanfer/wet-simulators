@@ -1,43 +1,47 @@
+
 import streamlit as st
 
 # Page configuration
 st.set_page_config(page_title="The Preston – Guest Portal", page_icon="💧", layout="centered")
 
-# Custom CSS for luxury branding
+# Import Google Fonts and set background
 st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 <style>
 body {
-    background-color: #2F2F2F;
-    color: #F4C8A6;
     font-family: 'Lato', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #F4C8A6;
+    text-align: center;
 }
 h1 {
     font-family: 'Playfair Display', serif;
     color: #D4AF37;
-    text-align: center;
-    font-size: 3em;
+    font-size: 3.2em;
     margin-bottom: 0.2em;
 }
 h3 {
-    text-align: center;
     font-style: italic;
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 2em;
 }
 .card {
-    background-color: #2F2F2F;
+    background-color: rgba(47, 47, 47, 0.85);
     border: 1px solid #D4AF37;
     padding: 1.5rem;
     margin: 1rem auto;
-    border-radius: 12px;
-    max-width: 500px;
-    text-align: center;
+    border-radius: 16px;
+    max-width: 480px;
     transition: 0.3s;
+    backdrop-filter: blur(4px);
 }
 .card:hover {
-    background-color: #3a3a3a;
-    box-shadow: 0 0 10px #D4AF37;
+    background-color: rgba(70, 70, 70, 0.9);
+    box-shadow: 0 0 12px #D4AF37;
 }
 a {
     text-decoration: none;
@@ -46,7 +50,8 @@ a {
 }
 hr {
     border: 1px solid #D4AF37;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
+    width: 60%;
 }
 .footer {
     text-align: center;
@@ -58,11 +63,7 @@ hr {
 """, unsafe_allow_html=True)
 
 # Header
-st.markdown("""
-<h1>THE PRESTON</h1>
-<h3>Private Guest Access<br><em>...you know you want to.</em></h3>
-<hr>
-""", unsafe_allow_html=True)
+st.markdown("""<h1>THE PRESTON</h1><h3>Private Guest Access<br><em>...you know you want to.</em></h3><hr>""", unsafe_allow_html=True)
 
 # Episode card(s)
 st.markdown("""
