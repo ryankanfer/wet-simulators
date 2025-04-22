@@ -10,7 +10,7 @@ st.markdown("""
 <style>
 body {
     font-family: 'Lato', sans-serif;
-    background-image: url('background.jpg');
+    background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
